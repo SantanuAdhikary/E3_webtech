@@ -1,0 +1,65 @@
+
+
+header > button{
+    background-color: red;
+}
+
+/*  PseudoClass Selector */
+
+
+header > button:hover{
+
+    background-color: green;
+}
+
+
+header > button:active{
+    background-color: blue;
+}
+
+
+
+header > p:nth-child(4){
+
+    background-color: red;
+}
+
+
+
+/*    PseudoElement Selector */
+
+
+ main > p::first-letter{
+    font-size: 30px;
+    color:red;
+ }
+
+
+ main > P::first-line{
+    font-style: italic;
+ }
+
+ main > h1{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+ }
+
+
+
+ main > h1::after{
+    content: " ***";
+    color:red;
+ }
+
+ main > h1::before{
+    content: "###";
+    color:green;
+ }
+
+
+ /* !  Attribute selector */
+
+ input[type="text"]{
+    background-color: red;
+ }

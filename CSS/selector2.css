@@ -1,0 +1,23 @@
+
+
+.con1{
+
+    height: 300px;
+    width: 500px;
+    background-color: antiquewhite;
+}
+
+/*  descendent selector */
+
+.con1 .box1{
+
+    height: 150px;
+    background-color: yellow;
+}
+
+
+/* direct child selector */
+
+.con1 > h2{
+    color:red;
+}

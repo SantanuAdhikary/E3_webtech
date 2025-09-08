@@ -1,0 +1,38 @@
+
+/* !  TagName selector */
+
+header{
+    height: 200px;
+    background-color: antiquewhite;
+}
+
+main{
+    height: 350px;
+    background-color: cadetblue;
+}
+
+/* ! ID selector */
+
+#topic{
+    color:green;
+}
+
+/* ! class name selector */
+
+.para{
+    color:white;
+
+}
+
+/* ! universal selector  */
+
+*{
+    font-style: italic;
+}
+
+/* ! group selector */
+
+
+.para , #topic , h2{
+    text-decoration: underline;
+}
