@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    height: 400px;
+    width: 800px;
+    border: 2px solid black;
+}
+
+.container > .box{
+    height: 70px;
+    width: 100px;
+    border: 2px solid red;
+}
+
+.container > #box1{
+
+    display: inline-block;
+}
+
+.container > #box2{
+    display: inline-block;
+}
+.container > #box3{
+    display: inline;
+}
+
+.container > #box4{
+    display: inline;
+}
+
+
+
+.section{
+    width: 400px;
+  
+    border: 2px solid black;
+    margin: 40px;
+    padding: 20px 40px;
+    background-color: black;
+    border-radius: 20px;
+   
+}
+
+.section > button{
+     display: block;
+     margin-bottom: 10px;
+     width: 100%;
+     padding: 10px;
+
+     font-size: 19px;
+     font-weight: bold;
+     text-transform: uppercase;
+     letter-spacing: 1.4px;
+     background-color: orange;
+     color:white;
+     border: none;
+     border-radius: 10px;
+     cursor: pointer;
+}
+
+.section > button:hover{
+    background-color: orangered;
+}
