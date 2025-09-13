@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    height: 80px;
+    background-color: black;
+    color:white;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav > ul{
+    display: flex;
+    gap:30px;
+}
+
+nav > ul > li{
+    font-size: 19px;
+    font-weight: bold;
+    text-transform: uppercase;
+    list-style: none;
+    letter-spacing: 1.3px;
+    cursor: pointer;
+    transition: all 0.4s ease-in;
+}
+
+nav > ul > li:hover{
+    color:orangered;
+    
+}
+
+nav > .right > button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.4s ease-in;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+}
+
+.right > button:hover{
+    background-color: gray;
+    color:white;
+}
