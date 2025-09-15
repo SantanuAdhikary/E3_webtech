@@ -1,0 +1,72 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.box1{
+    background-color: antiquewhite;
+
+    height:100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap:30px;
+}
+
+.box1 > h1{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color:white;
+    text-shadow: 0px 2px 2px black;
+    font-size: 50px;
+    transition: all 0.4s ease-in;
+    cursor: pointer;
+}
+
+.box1 > h1:hover{
+    color:orangered;
+    transform: scale(1.03);
+}
+.box1 > p{
+    font-size: 25px;
+    letter-spacing: 1.3px;
+}
+
+.box1 > button{
+    padding: 15px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: capitalize;
+    border-radius: 10px;
+    border: none;
+    background-color: olivedrab;
+    color:white;
+    cursor: pointer;
+    transition: all 0.5s ease-in;
+}
+
+.box1 > button:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 3px 6px black;
+}
+
+.box2{
+    height: 300px;
+    width: 400px;
+    background-color: red;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.box2 > .box3{
+    height: 90%;
+    width: 100%;
+    background-color: yellow;
+}
