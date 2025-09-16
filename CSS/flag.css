@@ -1,0 +1,28 @@
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+
+    .orange{
+        height: 33vh;
+        background-color: orange;
+    }
+
+    .white{
+        height: 34vh;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .green{
+        height: 33vh;
+        background-color: green;
+    }
+
+    .white > img{
+        height: 90%;
+    }
