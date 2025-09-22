@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.outer{
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    background: linear-gradient(to right ,red,yellow,green,black);
+}
+
+
+.card1{
+    height: 250px;
+    width: 350px;
+    border: 2px solid black;
+}
+
+.card1 >.box1{
+    height: 80px;
+    width: 100px;
+    background-color: red;
+
+   animation: movingBox 2s ease-in infinite alternate;
+}
+
+.card2{
+    height: 250px;
+    width: 350px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rotateElement 1s linear infinite;
+}
+.card3{
+    height: 250px;
+    width: 350px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.card2 > .box2{
+    height: 100px;
+    width: 100px;
+    border: 5px solid white;
+    animation: rotateElement 2s linear infinite;
+}
+
+.card3 > .box3{
+    height: 100px;
+    width: 100px;
+    border-top: 3px solid green;
+    border-radius: 50%;
+   animation: rotateElement 2s linear infinite;
+}
+
+
+
+.card4{
+    height: 300px;
+    width: 300px;
+    border: 3px solid white;
+    border-radius: 50%;
+    animation: rotateElement 2s linear infinite;
+}
+
+.card4 > .box4{
+    height: 100px;
+    width: 100px;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+
+
+
+@keyframes movingBox {
+    
+    from{
+
+    }
+    to{
+        transform: translateX(250px);
+        border-radius: 50%;
+        background-color: white;
+    }
+}
+
+
+
+@keyframes rotateElement {
+    
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
