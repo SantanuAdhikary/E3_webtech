@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    height: 80px;
+    width: 100%;
+    background-color: black;
+    color:orangered;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.outer{
+    height: calc(100vh - 80px);
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      position: relative;
+}
+
+header{
+    height: 80%;
+    width: 85%;
+    border: 2px solid black;
+    position: relative;
+  
+}
+
+#box1{
+    height: 50px;
+    width: 50px;
+    background-color: red;
+
+
+    position: absolute;
+    top:0px;
+    right:0px;
+    
+}
+#box2{
+    height: 60px;
+    width: 60px;
+    background-color: blue;
+    position: absolute;
+    right:0px;
+    bottom:0px;
+}
+#box3{
+    height: 70px;
+    width: 70px;
+    background-color: green;
+}
+#box4{
+    height: 80px;
+    width: 80px;
+    background-color: yellow;
+    position: absolute;
+    bottom: 0;
+}
+#box5{
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    color:white;
+
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
+
+
+
+.outer1{
+    height: 600px;
+    width: 800px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.middle{
+    height: 80%;
+    width: 85%;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      
+}
+.inner{
+    height: 80%;
+    width: 85%;
+    background-color: green;
+
+  
+    
+}
+
+.card1{
+    height: 80px;
+    width: 100px;
+    background-color: black;
+
+   position: absolute;
+   top:10px;
+}
+.card2{
+    height: 80px;
+    width: 100px;
+    background-color: white;
+}
