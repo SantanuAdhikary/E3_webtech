@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event in js</title>
+
+    <style>
+         .card{
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+         }
+
+         .card2{
+            height: 200px;
+            width: 200px;
+            background-color: yellow;
+         }
+
+         .card3 , .card4{
+            height: 200px;
+            width: 300px;
+            border: 2px solid black;
+         }
+    </style>
+</head>
+<body>
+    
+    <h1> event in js </h1>
+
+    <button onclick="display()"> click me</button>
+
+    <button ondblclick="display2()"> double click me</button>
+
+    <div class="card">
+
+    </div>
+
+    <button onclick="changeColor()">change color</button>
+
+
+    <div class="card2" onmouseover="changeColor2()" onmouseleave="cc()">
+
+    </div>
+
+
+    <div class="card3" >
+
+         <h2> hello how are you</h2>
+    </div>
+    <div class="card4" onclick="copyText()">
+
+     
+    </div>
+
+    <script src="./event.js"></script>
+</body>
+</html>
