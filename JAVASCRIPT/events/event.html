@@ -23,6 +23,47 @@
             width: 300px;
             border: 2px solid black;
          }
+
+         .card5{
+            height: 200px;
+            width: 300px;
+            background-color: red;
+         }
+
+         form{
+            background-color: black;
+            width: 350px;
+            padding: 20px 40px;
+            color:white;
+
+         }
+
+         form >input{
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+         }
+
+         form > label{
+            display: block;
+            margin-bottom: 10px;
+            font-size: 17px;
+            font-weight: bold;
+            letter-spacing: 1.3px;
+            text-transform: uppercase;
+         }
+
+         form > button{
+            width: 100%;
+            background-color: gray;
+            color:white;
+            font-size: 17px;
+            font-weight: bold;
+            border-radius: 10px;
+            border: none;
+            padding: 10px;
+         }
     </style>
 </head>
 <body>
@@ -45,7 +86,7 @@
     </div>
 
 
-    <div class="card3" >
+    <div class="card3" onclick="copyText2()" >
 
          <h2> hello how are you</h2>
     </div>
@@ -53,6 +94,32 @@
 
      
     </div>
+
+
+
+    <button id="btn"> event listener</button>
+
+
+    <div class="card5" >
+
+    </div>
+
+
+    <button id="btn2"> hi</button>
+
+
+
+
+     <form action="">
+
+        <label for="">enter name </label>
+        <input type="text" id="username">
+
+        <label for="">enter pass</label>
+        <input type="text" id="userpass">
+
+        <button>register</button>
+     </form>
 
     <script src="./event.js"></script>
 </body>
