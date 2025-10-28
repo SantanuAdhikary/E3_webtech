@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator in js</title>
+
+    <style>
+         *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+         }
+
+         .outer{
+            height: 100vh;
+            background-image: linear-gradient(skyblue,white);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap:30px;
+         }
+
+         .outer > h1{
+            letter-spacing: 1.4px;
+            font-size: 40px;
+            color:white;
+            text-shadow: 1px 2px 2px black;
+         }
+
+         .outer > .inner{
+            width: 400px;
+            background-color: #fefefe;
+            padding: 20px 40px;
+            border-radius: 20px;
+            box-shadow: 0px 3px 4px rgba(0,0,0,0.6);
+         }
+
+         .inner > input{
+            padding: 10px;
+            width: 100%;
+            margin-bottom: 14px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: right;
+            outline:none;
+         }
+
+         input:focus{
+            border: 2px solid skyblue;
+         }
+
+         .inner > .row{
+            /* border: 2px solid; */
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+         }
+
+         .row > button{
+            padding: 10px;
+            width: 60px;
+            height: 60px;
+            border: none;
+            background-color: #555;
+            color:white;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 18px;
+            
+         }
+
+         .row > button:active{
+            transform: scale(1.04);
+         }
+    </style>
+</head>
+<body>
+    
+    <div class="outer">
+          <h1> calculator</h1>
+
+          <div class="inner">
+               <input type="text">
+
+               <div class="row">
+                  <button onclick="clearScreen()">C</button>
+                  <button onclick="remove()"> <- </button>
+                  <button onclick="takeData('/')"> / </button>
+                  <button onclick="takeData('*')">*</button>
+               </div>
+               <div class="row">
+                  <button onclick="takeData(7)">7</button>
+                  <button onclick="takeData(8)"> 8 </button>
+                  <button onclick="takeData(9)"> 9 </button>
+                  <button onclick="takeData('-')">-</button>
+               </div>
+               <div class="row">
+                  <button onclick="takeData(4)">4</button>
+                  <button onclick="takeData(5)"> 5 </button>
+                  <button onclick="takeData(6)"> 6 </button>
+                  <button onclick="takeData('+')">+</button>
+               </div>
+               <div class="row">
+                  <button onclick="takeData(1)">1</button>
+                  <button onclick="takeData(2)"> 2 </button>
+                  <button onclick="takeData(3)"> 3 </button>
+                  <button onclick="takeData('%')">%</button>
+               </div>
+               <div class="row">
+                  <button onclick="takeData(0)">0</button>
+                  <button > EE</button>
+                  <button onclick="takeData('.')"> . </button>
+                  <button onclick="calculate()"> = </button>
+               </div>
+          </div>
+    </div>
+
+
+    <script src="./calculator.js"></script>
+</body>
+</html>
