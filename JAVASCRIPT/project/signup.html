@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project e3</title>
+
+    <style>
+         *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+         }
+
+         .outer{
+            height: 100vh;
+            background-color: red;
+            position: relative;
+         }
+         .upper{
+            height: 50vh;
+            background-color: blue;
+         }
+         .lower{
+            height: 50vh;
+            background-color: skyblue;
+         }
+         .center{
+            height: 70%;
+            width: 85%;
+            background-color: white;
+            border-radius: 20px;
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+
+            display: flex;
+            overflow: hidden;
+            box-shadow: 1px 4px 6px black;
+            
+         }
+
+         .left{
+            flex-basis: 45%;
+            /* background-color: red; */
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap:20px;
+            border-right:2px solid #ccc ;
+         }
+
+         .left > .inner{
+            background-color: #fefefe;
+            width: 300px;
+            padding: 10px 40px;
+            border-radius: 15px;
+            box-shadow: 1px 4px 5px rgba(0,0,0,0.6);
+         }
+
+         .inner > h1{
+            text-align: center;
+            margin-bottom: 10px;
+         }
+
+         form > input{
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            outline: none;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+         }
+
+         form > input:focus{
+            border: 2px solid #333;
+         }
+
+
+         form > label{
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: capitalize;
+            letter-spacing: 1.6px;
+            margin-bottom: 10px;
+         }
+
+         .left > p{
+            text-transform: capitalize;
+            font-weight: bold;
+            font-size: 18px;
+         }
+
+         .left > p > a{
+            text-decoration: none;
+            color:blue;
+         }
+
+         .right{
+            padding-left: 20px;
+            flex-basis: 55%;
+         }
+
+         .right > img{
+            height: 60%;
+            width: 100%;
+            object-fit: cover;
+            object-position: top;
+            
+
+         }
+
+         .right > h1{
+            text-transform: capitalize;
+            margin-top: 5px;
+            margin-bottom: 10px;
+    
+            animation: moving 4s steps(30) alternate infinite;
+            border-right: 2px solid black;
+            white-space: nowrap;
+            overflow: hidden;
+
+         }
+
+         .right > p{
+            font-size: 17px;
+         }
+
+         footer{
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+         }
+
+         footer > .line{
+            height: 4px;
+            width: 120px;
+            background-color: blue;
+            border-radius: 4px;
+         }
+
+         button{
+            width: 100%;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: skyblue;
+            color:white;
+            border: none;
+            cursor: pointer;
+            text-transform: uppercase;
+            text-shadow: 1px 2px 2px black;
+            letter-spacing: 1.7px;
+            font-weight: bold;
+         }
+
+         @keyframes moving {
+            from{
+                width: 0ch;
+            }
+            to{
+                width: 27ch;
+            }
+         }
+    </style>
+</head>
+<body>
+    
+
+    <div class="outer">
+         <div class="upper"></div>
+         <div class="lower"></div>
+         <div class="center">
+
+            <div class="left">
+
+                <div class="inner">
+
+                    <h1> signup</h1>
+
+                    <form action="" autocomplete="off">
+                        <label for="">enter name</label>
+                        <input type="text" id="username" required>
+                        <label for="">enter password</label>
+                        <input type="text" id="userpass" required>
+                        <label for="">enter email</label>
+                        <input type="text" id="useremail" required>
+
+                        <button>signup</button>
+                    </form>
+
+                </div>
+
+                <p> already have an account ? <a href="./login.html">Login</a> </p>
+
+            </div>
+            <div class="right">
+
+                 <img src="https://media.istockphoto.com/id/1305268276/vector/registration-abstract-concept-vector-illustration.jpg?s=612x612&w=0&k=20&c=nfvUbHjcNDVIPdWkaxGx0z0WZaAEuBK9SyG-aIqg2-0=" alt="">
+                 <h1>check your project progress</h1>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quos quia, placeat eligendi numquam maxime exercitationem laborum?</p>
+
+                 <footer>
+                     <div class="line"></div>
+                     <div class="line"></div>
+                     <div class="line"></div>
+                 </footer>
+            </div>
+         </div>
+    </div>
+
+
+
+   <script src="./signup.js"></script>
+</body>
+</html>
