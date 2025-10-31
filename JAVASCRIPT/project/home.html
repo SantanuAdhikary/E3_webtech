@@ -14,12 +14,15 @@
 
          nav{
             height: 80px;
-            background-color: #212121;
+            background-color: blue;
             color:white;
             display: flex;
             padding-inline: 30px;
             justify-content: space-between;
             align-items: center;
+            width: 100%;
+            position: fixed;
+            z-index:1;
          }
 
          .right{
@@ -29,7 +32,7 @@
 
          .right > button{
             padding: 8px 20px;
-            background-color: orange;
+            background-color: rgb(192, 125, 255);
             color:white;
             border-radius: 10px;
             border: none;
@@ -39,7 +42,52 @@
          }
 
          .right > button:hover{
-            background-color: orangered;
+            background-color: rgb(80, 15, 140);
+         }
+
+         .card{
+            height: 350px;
+            width: 350px;
+            /* border: 2px solid black; */
+            box-shadow: 1px 3px 4px rgba(0,0,0,0.6);
+            border-radius: 15px;
+            /* background-color: white; */
+
+            background-image: linear-gradient(rgb(68, 183, 228),white);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap:5px;
+            padding: 15px;
+            cursor: pointer;
+            transition: transform 0.5s ease-in;
+            color:white;
+            text-shadow: 1px 2px 2px black;
+
+         }
+         .card:hover{
+            transform: scale(1.03);
+         }
+
+         main{
+            min-height: calc(100vh - 80px);
+            background-image: linear-gradient(skyblue,white);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap:20px;
+            padding-top: 100px;
+
+         }
+
+         img{
+            height: 100px;
+            transition: transform 0.5s ease-in;
+         }
+
+         img:hover{
+            transform: rotate(360deg);
          }
     </style>
 </head>
@@ -47,12 +95,18 @@
 
    <nav>
         <h2>myLogo</h2>
+
+       
         <div class="right">
 
             <button id="logout">logout</button>
              
         </div>
    </nav>
+
+   <main>
+
+   </main>
 
     
 
